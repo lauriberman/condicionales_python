@@ -21,8 +21,10 @@ numero_2 = int(input('Ingrese el segundo número:\n'))
 
 if numero_1 > numero_2:
     print(numero_1, 'es mayor a', numero_2)
+elif numero_2 > numero_1:
+    print(numero_2, 'es mayor a', numero_1)   
 else:
-    print(numero_2, 'es mayor a', numero_1)    
+    print(numero_1, 'es igual a', numero_2)
 
 
 # Verifique si el numero_1 positivo, negativo o cero

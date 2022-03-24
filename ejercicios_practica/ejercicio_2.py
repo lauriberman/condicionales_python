@@ -21,8 +21,10 @@ texto_2 = str(input('Ingrese la segunda palabra:\n'))
 
 if texto_1 > texto_2:
     print(texto_1, 'es mayor alfabéticamente que', texto_2)
-else: 
+elif texto_1 < texto_2:
     print(texto_2, 'es mayor alfabéticamente que', texto_1)
+else:
+    print(texto_1,'es igual a', texto_2)
 
 # Compare cual de las dos palabras tiene mayor
 # cantidad de letras
@@ -56,4 +58,4 @@ if copia_texto_1 == texto_1:
 
 if copia_texto_1 != texto_2:
     print(copia_texto_1, 'es distinta a', texto_2)
-    
+
