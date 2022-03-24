@@ -33,3 +33,49 @@ contenido.
 
 print('Ejercicios de práctica con cadenas')
 # Empezar aquí la resolución del ejercicio
+
+palabra_1 = str(input('Ingrese una palabra:\n'))
+palabra_2 = str(input('Ingrese una segunda palabra:\n'))
+palabra_3 = str(input('Ingrese una tercera palabra:\n'))
+
+print('Cómo quiere ordenar las palabras ingresadas?\n')
+print('1 - Ordenar por orden alfabético\n')
+print('2 - Ordenar por cantidad de letras\n')
+respuesta = str(input('Ingrese el número de la respuesta elegida:\n'))
+
+if respuesta == '1':
+    print('Orden alfabético:')
+    if (palabra_1 > palabra_2) and (palabra_1 > palabra_3) and (palabra_2 > palabra_3):
+        print(palabra_1, palabra_2, palabra_3)
+    elif (palabra_1 > palabra_2) and (palabra_1 > palabra_3) and (palabra_3 > palabra_2):
+        print(palabra_1, palabra_3, palabra_2)
+    elif (palabra_2 > palabra_1) and (palabra_2 > palabra_3) and (palabra_1 > palabra_3):
+        print(palabra_2, palabra_1, palabra_3)
+    elif (palabra_2 > palabra_1) and (palabra_2 > palabra_3) and (palabra_3 > palabra_1):
+        print(palabra_2, palabra_3, palabra_1)
+    elif (palabra_3 > palabra_1) and (palabra_3 > palabra_2) and (palabra_1 > palabra_2):
+        print(palabra_3, palabra_1, palabra_2)
+    elif (palabra_3 > palabra_1) and (palabra_3 > palabra_2) and (palabra_2 > palabra_1):
+        print(palabra_3, palabra_2, palabra_1)
+
+if respuesta == '2':
+    print('Orden por cantidad de letras:')
+    if (len(palabra_1) > len(palabra_2)) and (len(palabra_1) > len(palabra_3)) and (len(palabra_2) > len(palabra_3)):
+        print(palabra_1, palabra_2, palabra_3)
+    elif (len(palabra_1) > len(palabra_2)) and (len(palabra_1) > len(palabra_3)) and (len(palabra_3) > len(palabra_2)):
+        print(palabra_1, palabra_3, palabra_2)
+    elif (len(palabra_2) > len(palabra_1)) and (len(palabra_2) > len(palabra_3)) and (len(palabra_1) > len(palabra_3)):
+        print(palabra_2, palabra_1, palabra_3)
+    elif (len(palabra_2) > len(palabra_1)) and (len(palabra_2) > len(palabra_3)) and (len(palabra_3) > len(palabra_1)):
+        print(palabra_2, palabra_3, palabra_1)
+    elif (len(palabra_3) > len(palabra_1)) and (len(palabra_3) > len(palabra_2)) and (len(palabra_1) > len(palabra_2)):
+        print(palabra_3, palabra_1, palabra_2)
+    elif (len(palabra_3) > len(palabra_1)) and (len(palabra_3) > len(palabra_2)) and (len(palabra_2) > len(palabra_1)):
+        print(palabra_3, palabra_2, palabra_1)
+
+        
+
+   
+
+
+
