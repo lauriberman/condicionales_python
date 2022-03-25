@@ -38,10 +38,11 @@ palabra_1 = str(input('Ingrese una palabra:\n'))
 palabra_2 = str(input('Ingrese una segunda palabra:\n'))
 palabra_3 = str(input('Ingrese una tercera palabra:\n'))
 
-print('Cómo quiere ordenar las palabras ingresadas?\n')
+print('¿Cómo quiere ordenar las palabras ingresadas?\n')
 print('1 - Ordenar por orden alfabético\n')
 print('2 - Ordenar por cantidad de letras\n')
 respuesta = str(input('Ingrese el número de la respuesta elegida:\n'))
+
 
 if respuesta == '1':
     print('Orden alfabético:')
