@@ -41,8 +41,10 @@ else:
 # Verifique si el numero_1 es mayor a 0 y menor a 100
 # Imprima en pantalla si se cumple o no la condición
 
-if 0 < numero_1 < 100:
-    print(numero_1, 'es mayor a 0 y menor a 100')
+if numero_1 > 0 and numero_1 < 100:
+    print(numero_1, 'es mayor a 0 y menor a 100. La condición se cumple')
+else:
+    print('La condición no se cumple')
 
 
 # Verifique si el numero_1 es menor a 10 o el numero_2
@@ -50,5 +52,6 @@ if 0 < numero_1 < 100:
 # Imprima en pantalla si se cumple o no la condición
 
 if numero_1 < 10 or numero_2 > -2:
-    print(numero_1, 'es menor a 10 o', numero_2, 'es mayor a -2')
-    
+    print(numero_1, 'es menor a 10 o', numero_2, 'es mayor a -2. La condición se cumple')
+else:
+    print('La condición no se cumple')    
